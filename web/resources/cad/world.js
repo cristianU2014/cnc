@@ -7,8 +7,7 @@ $(document).ready(function() {
         gd.showOrigin = true;
         gd.showGrid = true;
         
-        
-
+       
 
         // Check for the various File API support.
         if (window.File && window.FileReader && window.FileList && window.Blob) {
@@ -17,8 +16,8 @@ $(document).ready(function() {
         } else {
           alert('Su navegador no es compatible con nuestra arquitectura.');
         }
-
-
+        
+        receiveAjax();
         loadIcons(gd);
         initCAD(gd);
 

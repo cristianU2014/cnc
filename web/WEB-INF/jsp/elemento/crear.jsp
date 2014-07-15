@@ -36,6 +36,7 @@
                 <script src="<c:url value='/resources/cad/inputHandler.js'/>"></script>
                 <script src="<c:url value='/resources/cad/logicDisplay.js'/>"></script>
                 <script src="<c:url value='/resources/cad/graphicDisplay.js'/>"></script>
+                <script src="<c:url value='/resources/cad/Ajax_Json.js'/>"></script>
                 <script src="<c:url value='/resources/cad/world.js'/>"></script>
                 <script src="<c:url value='/resources/cad/customShapes.js'/>"></script>
                 
@@ -53,10 +54,11 @@
 	</head>
 	<body>  
 		Modelo : ${Id}
+                Nombre Modelo: ${NombreModel}
+                <%--Tipo Maquina: ${TipoMaquina}--%>
                 
-                <input type="button" value="Traer Lista linea" id="btnLineas" />
-                
-                <button type='button' onclick='RestDelete()'>DELETE</button>
+                <div id="theJson"></div>
+                       
                 <div class="cad">
                     <div id="titulo">OpenCNC</div>
                     <div id="paper2"></div>
